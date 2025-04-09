@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController" customModule="MOVIEDB" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="4AY-aA-i9N">
+                    <rect key="frame" x="136.66666666666666" y="84" width="119.99999999999997" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Cmo-Bl-MAD"/>
+                        <constraint firstAttribute="height" constant="120" id="dcy-nT-mnX"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T44-Oo-ZcI">
+                    <rect key="frame" x="152" y="264" width="89" height="36"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="About Us">
+                        <color key="titleColor" red="0.0" green="0.82352941180000006" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sl-ez-8h6">
+                    <rect key="frame" x="97.666666666666686" y="320" width="198" height="36"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Terms and Condition">
+                        <color key="titleColor" red="0.0" green="0.82352941180000006" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVJ-eK-H7W">
+                    <rect key="frame" x="152.33333333333334" y="775" width="88.666666666666657" height="18"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.031372549019607843" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T44-Oo-ZcI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AYm-tq-qgq"/>
+                <constraint firstItem="4AY-aA-i9N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gcb-7k-glP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FVJ-eK-H7W" secondAttribute="bottom" constant="25" id="eGO-Ow-kFi"/>
+                <constraint firstItem="FVJ-eK-H7W" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fpV-Nj-hKB"/>
+                <constraint firstItem="4AY-aA-i9N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="mUC-D4-4dW"/>
+                <constraint firstItem="8Sl-ez-8h6" firstAttribute="top" secondItem="T44-Oo-ZcI" secondAttribute="bottom" constant="20" id="md8-n7-zgM"/>
+                <constraint firstItem="T44-Oo-ZcI" firstAttribute="top" secondItem="4AY-aA-i9N" secondAttribute="bottom" constant="60" id="sMY-hF-cVi"/>
+                <constraint firstItem="8Sl-ez-8h6" firstAttribute="centerX" secondItem="T44-Oo-ZcI" secondAttribute="centerX" id="vz4-CQ-8XV"/>
+            </constraints>
+            <point key="canvasLocation" x="279" y="-32"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="1200" height="1536"/>
+    </resources>
+</document>
